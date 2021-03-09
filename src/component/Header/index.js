@@ -1,27 +1,23 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
-import './style.css';
+import './header.css';
 
-import Routes from './routes'
-
-class App extends Component{
-
+class Header extends Component{
     constructor(props){
         super(props);
         this.state = {
 
         }
-
     }
-
 
     render(){
         return(
-            <div className="app">
-                <Routes/>
+            <div className="header">
+                <Link to="/">Filmaria</Link>
             </div>
         );
     }
 }
 
-export default App
+export default Header
